@@ -1,0 +1,9 @@
+# Adjust single service
+docker-compose rm -s -v yourService
+docker-compose up -d yourService
+# Import data 
+mongoimport --type <filetype> -d <db name> -c <collection>  --headerline --username <user> --password <pass> --authenticationDatabase=admin <file path>
+# Submit the spark job
+spark-submit --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.1 <file path>
+# Copy file from container to host
+docker cp <containerId>:/file/path/within/container /host/path/target

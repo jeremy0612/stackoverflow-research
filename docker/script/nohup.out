@@ -1,0 +1,496 @@
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.mongodb.spark#mongo-spark-connector_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-b385c843-187d-4c2f-bf40-89841315c7a2;1.0
+	confs: [default]
+:: resolution report :: resolve 4148ms :: artifacts dl 0ms
+	:: modules in use:
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   1   |   0   |   0   |   0   ||   0   |   0   |
+	---------------------------------------------------------------------
+
+:: problems summary ::
+:::: WARNINGS
+		module not found: org.mongodb.spark#mongo-spark-connector_2.12;3.4.1
+
+	==== local-m2-cache: tried
+
+	  file:/root/.m2/repository/org/mongodb/spark/mongo-spark-connector_2.12/3.4.1/mongo-spark-connector_2.12-3.4.1.pom
+
+	  -- artifact org.mongodb.spark#mongo-spark-connector_2.12;3.4.1!mongo-spark-connector_2.12.jar:
+
+	  file:/root/.m2/repository/org/mongodb/spark/mongo-spark-connector_2.12/3.4.1/mongo-spark-connector_2.12-3.4.1.jar
+
+	==== local-ivy-cache: tried
+
+	  /root/.ivy2/local/org.mongodb.spark/mongo-spark-connector_2.12/3.4.1/ivys/ivy.xml
+
+	  -- artifact org.mongodb.spark#mongo-spark-connector_2.12;3.4.1!mongo-spark-connector_2.12.jar:
+
+	  /root/.ivy2/local/org.mongodb.spark/mongo-spark-connector_2.12/3.4.1/jars/mongo-spark-connector_2.12.jar
+
+	==== central: tried
+
+	  https://repo1.maven.org/maven2/org/mongodb/spark/mongo-spark-connector_2.12/3.4.1/mongo-spark-connector_2.12-3.4.1.pom
+
+	  -- artifact org.mongodb.spark#mongo-spark-connector_2.12;3.4.1!mongo-spark-connector_2.12.jar:
+
+	  https://repo1.maven.org/maven2/org/mongodb/spark/mongo-spark-connector_2.12/3.4.1/mongo-spark-connector_2.12-3.4.1.jar
+
+	==== spark-packages: tried
+
+	  https://repos.spark-packages.org/org/mongodb/spark/mongo-spark-connector_2.12/3.4.1/mongo-spark-connector_2.12-3.4.1.pom
+
+	  -- artifact org.mongodb.spark#mongo-spark-connector_2.12;3.4.1!mongo-spark-connector_2.12.jar:
+
+	  https://repos.spark-packages.org/org/mongodb/spark/mongo-spark-connector_2.12/3.4.1/mongo-spark-connector_2.12-3.4.1.jar
+
+		::::::::::::::::::::::::::::::::::::::::::::::
+
+		::          UNRESOLVED DEPENDENCIES         ::
+
+		::::::::::::::::::::::::::::::::::::::::::::::
+
+		:: org.mongodb.spark#mongo-spark-connector_2.12;3.4.1: not found
+
+		::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+:: USE VERBOSE OR DEBUG MESSAGE LEVEL FOR MORE DETAILS
+Exception in thread "main" java.lang.RuntimeException: [unresolved dependency: org.mongodb.spark#mongo-spark-connector_2.12;3.4.1: not found]
+	at org.apache.spark.deploy.SparkSubmitUtils$.resolveMavenCoordinates(SparkSubmit.scala:1528)
+	at org.apache.spark.util.DependencyUtils$.resolveMavenDependencies(DependencyUtils.scala:185)
+	at org.apache.spark.deploy.SparkSubmit.prepareSubmitEnvironment(SparkSubmit.scala:332)
+	at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:955)
+	at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:192)
+	at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:215)
+	at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:91)
+	at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1111)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1120)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.mongodb.spark#mongo-spark-connector_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-f9cf88e0-ba42-4379-938f-111b7de84ab6;1.0
+	confs: [default]
+	found org.mongodb.spark#mongo-spark-connector_2.12;3.0.1 in central
+	found org.mongodb#mongodb-driver-sync;4.0.5 in central
+	found org.mongodb#bson;4.0.5 in central
+	found org.mongodb#mongodb-driver-core;4.0.5 in central
+:: resolution report :: resolve 197ms :: artifacts dl 6ms
+	:: modules in use:
+	org.mongodb#bson;4.0.5 from central in [default]
+	org.mongodb#mongodb-driver-core;4.0.5 from central in [default]
+	org.mongodb#mongodb-driver-sync;4.0.5 from central in [default]
+	org.mongodb.spark#mongo-spark-connector_2.12;3.0.1 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   4   |   0   |   0   |   0   ||   4   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-f9cf88e0-ba42-4379-938f-111b7de84ab6
+	confs: [default]
+	0 artifacts copied, 4 already retrieved (0kB/4ms)
+24/01/12 07:19:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/01/12 07:19:28 INFO SparkContext: Running Spark version 3.4.1
+24/01/12 07:19:28 INFO ResourceUtils: ==============================================================
+24/01/12 07:19:28 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/01/12 07:19:28 INFO ResourceUtils: ==============================================================
+24/01/12 07:19:28 INFO SparkContext: Submitted application: MyApp
+24/01/12 07:19:28 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/01/12 07:19:28 INFO ResourceProfile: Limiting resource is cpu
+24/01/12 07:19:28 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/01/12 07:19:28 INFO SecurityManager: Changing view acls to: root,spark
+24/01/12 07:19:28 INFO SecurityManager: Changing modify acls to: root,spark
+24/01/12 07:19:28 INFO SecurityManager: Changing view acls groups to: 
+24/01/12 07:19:28 INFO SecurityManager: Changing modify acls groups to: 
+24/01/12 07:19:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root, spark; groups with view permissions: EMPTY; users with modify permissions: root, spark; groups with modify permissions: EMPTY
+24/01/12 07:19:28 INFO Utils: Successfully started service 'sparkDriver' on port 37183.
+24/01/12 07:19:28 INFO SparkEnv: Registering MapOutputTracker
+24/01/12 07:19:28 INFO SparkEnv: Registering BlockManagerMaster
+24/01/12 07:19:28 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/01/12 07:19:28 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/01/12 07:19:28 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/01/12 07:19:28 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-c626b596-48e6-4af8-a688-6cd5ebad4a18
+24/01/12 07:19:29 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/01/12 07:19:29 INFO SparkEnv: Registering OutputCommitCoordinator
+24/01/12 07:19:29 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/01/12 07:19:29 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/01/12 07:19:29 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+24/01/12 07:19:29 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar at spark://spark:37183/jars/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.mongodb_mongodb-driver-sync-4.0.5.jar at spark://spark:37183/jars/org.mongodb_mongodb-driver-sync-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.mongodb_bson-4.0.5.jar at spark://spark:37183/jars/org.mongodb_bson-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO SparkContext: Added JAR file:///root/.ivy2/jars/org.mongodb_mongodb-driver-core-4.0.5.jar at spark://spark:37183/jars/org.mongodb_mongodb-driver-core-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO SparkContext: Added file file:///root/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar at file:///root/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO Utils: Copying /root/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar
+24/01/12 07:19:29 INFO SparkContext: Added file file:///root/.ivy2/jars/org.mongodb_mongodb-driver-sync-4.0.5.jar at file:///root/.ivy2/jars/org.mongodb_mongodb-driver-sync-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO Utils: Copying /root/.ivy2/jars/org.mongodb_mongodb-driver-sync-4.0.5.jar to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_mongodb-driver-sync-4.0.5.jar
+24/01/12 07:19:29 INFO SparkContext: Added file file:///root/.ivy2/jars/org.mongodb_bson-4.0.5.jar at file:///root/.ivy2/jars/org.mongodb_bson-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO Utils: Copying /root/.ivy2/jars/org.mongodb_bson-4.0.5.jar to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_bson-4.0.5.jar
+24/01/12 07:19:29 INFO SparkContext: Added file file:///root/.ivy2/jars/org.mongodb_mongodb-driver-core-4.0.5.jar at file:///root/.ivy2/jars/org.mongodb_mongodb-driver-core-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO Utils: Copying /root/.ivy2/jars/org.mongodb_mongodb-driver-core-4.0.5.jar to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_mongodb-driver-core-4.0.5.jar
+24/01/12 07:19:29 INFO Executor: Starting executor ID driver on host spark
+24/01/12 07:19:29 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/01/12 07:19:29 INFO Executor: Fetching file:///root/.ivy2/jars/org.mongodb_bson-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO Utils: /root/.ivy2/jars/org.mongodb_bson-4.0.5.jar has been previously copied to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_bson-4.0.5.jar
+24/01/12 07:19:29 INFO Executor: Fetching file:///root/.ivy2/jars/org.mongodb_mongodb-driver-core-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO Utils: /root/.ivy2/jars/org.mongodb_mongodb-driver-core-4.0.5.jar has been previously copied to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_mongodb-driver-core-4.0.5.jar
+24/01/12 07:19:29 INFO Executor: Fetching file:///root/.ivy2/jars/org.mongodb_mongodb-driver-sync-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO Utils: /root/.ivy2/jars/org.mongodb_mongodb-driver-sync-4.0.5.jar has been previously copied to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_mongodb-driver-sync-4.0.5.jar
+24/01/12 07:19:29 INFO Executor: Fetching file:///root/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO Utils: /root/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar has been previously copied to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar
+24/01/12 07:19:29 INFO Executor: Fetching spark://spark:37183/jars/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO TransportClientFactory: Successfully created connection to spark/172.19.0.5:37183 after 15 ms (0 ms spent in bootstraps)
+24/01/12 07:19:29 INFO Utils: Fetching spark://spark:37183/jars/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/fetchFileTemp11852270116155698328.tmp
+24/01/12 07:19:29 INFO Utils: /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/fetchFileTemp11852270116155698328.tmp has been previously copied to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar
+24/01/12 07:19:29 INFO Executor: Adding file:/tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb.spark_mongo-spark-connector_2.12-3.0.1.jar to class loader
+24/01/12 07:19:29 INFO Executor: Fetching spark://spark:37183/jars/org.mongodb_mongodb-driver-sync-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO Utils: Fetching spark://spark:37183/jars/org.mongodb_mongodb-driver-sync-4.0.5.jar to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/fetchFileTemp8697534863441646003.tmp
+24/01/12 07:19:29 INFO Utils: /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/fetchFileTemp8697534863441646003.tmp has been previously copied to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_mongodb-driver-sync-4.0.5.jar
+24/01/12 07:19:29 INFO Executor: Adding file:/tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_mongodb-driver-sync-4.0.5.jar to class loader
+24/01/12 07:19:29 INFO Executor: Fetching spark://spark:37183/jars/org.mongodb_bson-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO Utils: Fetching spark://spark:37183/jars/org.mongodb_bson-4.0.5.jar to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/fetchFileTemp16362891626198322002.tmp
+24/01/12 07:19:29 INFO Utils: /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/fetchFileTemp16362891626198322002.tmp has been previously copied to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_bson-4.0.5.jar
+24/01/12 07:19:29 INFO Executor: Adding file:/tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_bson-4.0.5.jar to class loader
+24/01/12 07:19:29 INFO Executor: Fetching spark://spark:37183/jars/org.mongodb_mongodb-driver-core-4.0.5.jar with timestamp 1705043968685
+24/01/12 07:19:29 INFO Utils: Fetching spark://spark:37183/jars/org.mongodb_mongodb-driver-core-4.0.5.jar to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/fetchFileTemp15047268067188361863.tmp
+24/01/12 07:19:29 INFO Utils: /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/fetchFileTemp15047268067188361863.tmp has been previously copied to /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_mongodb-driver-core-4.0.5.jar
+24/01/12 07:19:29 INFO Executor: Adding file:/tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/userFiles-a744ded9-db82-4505-8fbb-69779a28c387/org.mongodb_mongodb-driver-core-4.0.5.jar to class loader
+24/01/12 07:19:29 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37855.
+24/01/12 07:19:29 INFO NettyBlockTransferService: Server created on spark:37855
+24/01/12 07:19:29 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/01/12 07:19:29 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, spark, 37855, None)
+24/01/12 07:19:29 INFO BlockManagerMasterEndpoint: Registering block manager spark:37855 with 434.4 MiB RAM, BlockManagerId(driver, spark, 37855, None)
+24/01/12 07:19:29 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, spark, 37855, None)
+24/01/12 07:19:29 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, spark, 37855, None)
+24/01/12 07:19:29 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+24/01/12 07:19:29 INFO SharedState: Warehouse path is 'file:/usr/local/share/spark/spark-warehouse'.
+24/01/12 07:19:30 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 184.0 B, free 434.4 MiB)
+24/01/12 07:19:30 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 396.0 B, free 434.4 MiB)
+24/01/12 07:19:30 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on spark:37855 (size: 396.0 B, free: 434.4 MiB)
+24/01/12 07:19:30 INFO SparkContext: Created broadcast 0 from broadcast at MongoSpark.scala:530
+24/01/12 07:19:30 INFO cluster: Cluster created with settings {hosts=[172.19.0.2:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+24/01/12 07:19:30 INFO MongoClientCache: Creating MongoClient: [172.19.0.2:27017]
+24/01/12 07:19:30 INFO cluster: Cluster description not yet available. Waiting for 30000 ms before timing out
+24/01/12 07:19:30 INFO connection: Opened connection [connectionId{localValue:1, serverValue:53}] to 172.19.0.2:27017
+24/01/12 07:19:30 INFO cluster: Monitor thread successfully connected to server with description ServerDescription{address=172.19.0.2:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2517100}
+24/01/12 07:19:30 INFO connection: Opened connection [connectionId{localValue:2, serverValue:54}] to 172.19.0.2:27017
+24/01/12 07:19:30 INFO SparkContext: Starting job: treeAggregate at MongoInferSchema.scala:88
+24/01/12 07:19:30 INFO DAGScheduler: Got job 0 (treeAggregate at MongoInferSchema.scala:88) with 1 output partitions
+24/01/12 07:19:30 INFO DAGScheduler: Final stage: ResultStage 0 (treeAggregate at MongoInferSchema.scala:88)
+24/01/12 07:19:30 INFO DAGScheduler: Parents of final stage: List()
+24/01/12 07:19:30 INFO DAGScheduler: Missing parents: List()
+24/01/12 07:19:30 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[4] at treeAggregate at MongoInferSchema.scala:88), which has no missing parents
+24/01/12 07:19:30 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.1 KiB, free 434.4 MiB)
+24/01/12 07:19:30 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.1 KiB, free 434.4 MiB)
+24/01/12 07:19:30 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on spark:37855 (size: 4.1 KiB, free: 434.4 MiB)
+24/01/12 07:19:30 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1535
+24/01/12 07:19:30 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[4] at treeAggregate at MongoInferSchema.scala:88) (first 15 tasks are for partitions Vector(0))
+24/01/12 07:19:30 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+24/01/12 07:19:30 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (spark, executor driver, partition 0, ANY, 7521 bytes) 
+24/01/12 07:19:30 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/01/12 07:19:30 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+com.mongodb.MongoCommandException: Command failed with error 13 (Unauthorized): 'command aggregate requires authentication' on server 172.19.0.2:27017. The full response is {"ok": 0.0, "errmsg": "command aggregate requires authentication", "code": 13, "codeName": "Unauthorized"}
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:175)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:302)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:258)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:500)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:71)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:224)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:202)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:118)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:110)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:343)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:334)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommandWithConnection(CommandOperationHelper.java:220)
+	at com.mongodb.internal.operation.CommandOperationHelper$5.call(CommandOperationHelper.java:206)
+	at com.mongodb.internal.operation.OperationHelper.withReadConnectionSource(OperationHelper.java:462)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:203)
+	at com.mongodb.internal.operation.AggregateOperationImpl.execute(AggregateOperationImpl.java:189)
+	at com.mongodb.internal.operation.AggregateOperation.execute(AggregateOperation.java:296)
+	at com.mongodb.internal.operation.AggregateOperation.execute(AggregateOperation.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:135)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:92)
+	at com.mongodb.spark.rdd.MongoRDD.getCursor(MongoRDD.scala:193)
+	at com.mongodb.spark.rdd.MongoRDD.compute(MongoRDD.scala:161)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:92)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:139)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:554)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1529)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:557)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+24/01/12 07:19:30 WARN TaskSetManager: Lost task 0.0 in stage 0.0 (TID 0) (spark executor driver): com.mongodb.MongoCommandException: Command failed with error 13 (Unauthorized): 'command aggregate requires authentication' on server 172.19.0.2:27017. The full response is {"ok": 0.0, "errmsg": "command aggregate requires authentication", "code": 13, "codeName": "Unauthorized"}
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:175)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:302)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:258)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:500)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:71)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:224)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:202)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:118)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:110)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:343)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:334)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommandWithConnection(CommandOperationHelper.java:220)
+	at com.mongodb.internal.operation.CommandOperationHelper$5.call(CommandOperationHelper.java:206)
+	at com.mongodb.internal.operation.OperationHelper.withReadConnectionSource(OperationHelper.java:462)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:203)
+	at com.mongodb.internal.operation.AggregateOperationImpl.execute(AggregateOperationImpl.java:189)
+	at com.mongodb.internal.operation.AggregateOperation.execute(AggregateOperation.java:296)
+	at com.mongodb.internal.operation.AggregateOperation.execute(AggregateOperation.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:135)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:92)
+	at com.mongodb.spark.rdd.MongoRDD.getCursor(MongoRDD.scala:193)
+	at com.mongodb.spark.rdd.MongoRDD.compute(MongoRDD.scala:161)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:92)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:139)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:554)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1529)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:557)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+24/01/12 07:19:30 ERROR TaskSetManager: Task 0 in stage 0.0 failed 1 times; aborting job
+24/01/12 07:19:30 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+24/01/12 07:19:30 INFO TaskSchedulerImpl: Cancelling stage 0
+24/01/12 07:19:30 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage cancelled
+24/01/12 07:19:30 INFO DAGScheduler: ResultStage 0 (treeAggregate at MongoInferSchema.scala:88) failed in 0.211 s due to Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (spark executor driver): com.mongodb.MongoCommandException: Command failed with error 13 (Unauthorized): 'command aggregate requires authentication' on server 172.19.0.2:27017. The full response is {"ok": 0.0, "errmsg": "command aggregate requires authentication", "code": 13, "codeName": "Unauthorized"}
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:175)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:302)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:258)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:500)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:71)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:224)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:202)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:118)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:110)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:343)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:334)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommandWithConnection(CommandOperationHelper.java:220)
+	at com.mongodb.internal.operation.CommandOperationHelper$5.call(CommandOperationHelper.java:206)
+	at com.mongodb.internal.operation.OperationHelper.withReadConnectionSource(OperationHelper.java:462)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:203)
+	at com.mongodb.internal.operation.AggregateOperationImpl.execute(AggregateOperationImpl.java:189)
+	at com.mongodb.internal.operation.AggregateOperation.execute(AggregateOperation.java:296)
+	at com.mongodb.internal.operation.AggregateOperation.execute(AggregateOperation.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:135)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:92)
+	at com.mongodb.spark.rdd.MongoRDD.getCursor(MongoRDD.scala:193)
+	at com.mongodb.spark.rdd.MongoRDD.compute(MongoRDD.scala:161)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:92)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:139)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:554)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1529)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:557)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+24/01/12 07:19:30 INFO DAGScheduler: Job 0 failed: treeAggregate at MongoInferSchema.scala:88, took 0.244711 s
+Traceback (most recent call last):
+  File "/usr/local/share/spark/temp_script.py", line 16, in <module>
+    .load()
+     ^^^^^^
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 307, in load
+  File "/opt/bitnami/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 169, in deco
+  File "/opt/bitnami/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 326, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o37.load.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (spark executor driver): com.mongodb.MongoCommandException: Command failed with error 13 (Unauthorized): 'command aggregate requires authentication' on server 172.19.0.2:27017. The full response is {"ok": 0.0, "errmsg": "command aggregate requires authentication", "code": 13, "codeName": "Unauthorized"}
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:175)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:302)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:258)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:500)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:71)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:224)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:202)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:118)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:110)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:343)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:334)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommandWithConnection(CommandOperationHelper.java:220)
+	at com.mongodb.internal.operation.CommandOperationHelper$5.call(CommandOperationHelper.java:206)
+	at com.mongodb.internal.operation.OperationHelper.withReadConnectionSource(OperationHelper.java:462)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:203)
+	at com.mongodb.internal.operation.AggregateOperationImpl.execute(AggregateOperationImpl.java:189)
+	at com.mongodb.internal.operation.AggregateOperation.execute(AggregateOperation.java:296)
+	at com.mongodb.internal.operation.AggregateOperation.execute(AggregateOperation.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:135)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:92)
+	at com.mongodb.spark.rdd.MongoRDD.getCursor(MongoRDD.scala:193)
+	at com.mongodb.spark.rdd.MongoRDD.compute(MongoRDD.scala:161)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:92)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:139)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:554)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1529)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:557)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2785)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2721)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2720)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2720)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1206)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1206)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1206)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:2984)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2923)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2912)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:971)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2263)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2358)
+	at org.apache.spark.rdd.RDD.$anonfun$fold$1(RDD.scala:1172)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:405)
+	at org.apache.spark.rdd.RDD.fold(RDD.scala:1166)
+	at org.apache.spark.rdd.RDD.$anonfun$treeAggregate$2(RDD.scala:1259)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:405)
+	at org.apache.spark.rdd.RDD.treeAggregate(RDD.scala:1226)
+	at org.apache.spark.rdd.RDD.$anonfun$treeAggregate$1(RDD.scala:1212)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:405)
+	at org.apache.spark.rdd.RDD.treeAggregate(RDD.scala:1212)
+	at com.mongodb.spark.sql.MongoInferSchema$.apply(MongoInferSchema.scala:88)
+	at com.mongodb.spark.sql.DefaultSource.constructRelation(DefaultSource.scala:97)
+	at com.mongodb.spark.sql.DefaultSource.createRelation(DefaultSource.scala:50)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:346)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:172)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.mongodb.MongoCommandException: Command failed with error 13 (Unauthorized): 'command aggregate requires authentication' on server 172.19.0.2:27017. The full response is {"ok": 0.0, "errmsg": "command aggregate requires authentication", "code": 13, "codeName": "Unauthorized"}
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:175)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:302)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:258)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:500)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:71)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:224)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:202)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:118)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:110)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:343)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:334)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommandWithConnection(CommandOperationHelper.java:220)
+	at com.mongodb.internal.operation.CommandOperationHelper$5.call(CommandOperationHelper.java:206)
+	at com.mongodb.internal.operation.OperationHelper.withReadConnectionSource(OperationHelper.java:462)
+	at com.mongodb.internal.operation.CommandOperationHelper.executeCommand(CommandOperationHelper.java:203)
+	at com.mongodb.internal.operation.AggregateOperationImpl.execute(AggregateOperationImpl.java:189)
+	at com.mongodb.internal.operation.AggregateOperation.execute(AggregateOperation.java:296)
+	at com.mongodb.internal.operation.AggregateOperation.execute(AggregateOperation.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:135)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:92)
+	at com.mongodb.spark.rdd.MongoRDD.getCursor(MongoRDD.scala:193)
+	at com.mongodb.spark.rdd.MongoRDD.compute(MongoRDD.scala:161)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:92)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:139)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:554)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1529)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:557)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	... 1 more
+
+24/01/12 07:19:31 INFO SparkContext: Invoking stop() from shutdown hook
+24/01/12 07:19:31 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/01/12 07:19:31 INFO SparkUI: Stopped Spark web UI at http://spark:4041
+24/01/12 07:19:31 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/01/12 07:19:31 INFO MemoryStore: MemoryStore cleared
+24/01/12 07:19:31 INFO BlockManager: BlockManager stopped
+24/01/12 07:19:31 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/01/12 07:19:31 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/01/12 07:19:31 INFO SparkContext: Successfully stopped SparkContext
+24/01/12 07:19:31 INFO ShutdownHookManager: Shutdown hook called
+24/01/12 07:19:31 INFO ShutdownHookManager: Deleting directory /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715/pyspark-7dc6a64d-3fa7-4104-832f-9a3b6d5555e4
+24/01/12 07:19:31 INFO ShutdownHookManager: Deleting directory /tmp/spark-232e5327-a67d-426a-864c-eaa28a8cd215
+24/01/12 07:19:31 INFO ShutdownHookManager: Deleting directory /tmp/spark-ed1a233a-d80b-4de3-87fe-b5cbc5b8f715
